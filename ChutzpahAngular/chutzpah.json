@@ -1,0 +1,20 @@
+﻿{
+  "Framework": "jasmine",    
+  "Compile": {
+    "Mode": "External",
+    "Extensions": [ ".ts" ],
+    "ExtensionsWithNoOutput": [ ".d.ts" ],
+    "Timeout": 2000
+  },
+
+   "Tests": [ 
+    {
+      "Includes": [ "*.ts" ],
+      "Excludes": [ "node_modules" ]
+    }
+  ],
+  "References": [    
+    { "Path": "node_modules/systemjs/dist/system.js" },   
+    { "Path": "systemjs.config.js" }
+  ]
+} 

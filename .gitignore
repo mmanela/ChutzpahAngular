@@ -3,3 +3,6 @@
 ################################################################################
 
 /ChutzpahAngular/bin
+/ChutzpahAngular/node_modules
+/ChutzpahAngular/obj/Debug
+/packages
