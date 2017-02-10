@@ -1,20 +1,27 @@
 /// <reference path="../../node_modules/@types/jasmine/index.d.ts" />
-System.register(['@angular/core/testing', '@angular/platform-browser', '../App/app.component'], function(exports_1, context_1) {
+System.register(['../App/app.component', '@angular/core/testing', '@angular/platform-browser-dynamic/testing', '@angular/platform-browser'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var testing_1, platform_browser_1, app_component_1;
+    var app_component_1, testing_1, testing_2, platform_browser_1;
     return {
         setters:[
+            function (app_component_1_1) {
+                app_component_1 = app_component_1_1;
+            },
             function (testing_1_1) {
                 testing_1 = testing_1_1;
             },
+            function (testing_2_1) {
+                testing_2 = testing_2_1;
+            },
             function (platform_browser_1_1) {
                 platform_browser_1 = platform_browser_1_1;
-            },
-            function (app_component_1_1) {
-                app_component_1 = app_component_1_1;
             }],
         execute: function() {
+            // The following initializes the test environment for Angular 2. This call is required for Angular 2 dependency injection.
+            // That's new in Angular 2 RC5
+            testing_1.TestBed.resetTestEnvironment();
+            testing_1.TestBed.initTestEnvironment(testing_2.BrowserDynamicTestingModule, testing_2.platformBrowserDynamicTesting());
             describe("AppComponent -> ", function () {
                 var de;
                 var comp;

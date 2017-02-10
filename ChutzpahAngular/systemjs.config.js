@@ -12,6 +12,7 @@
         map: {
             // our app is within the app folder
             app: 'Angular_Code/App',
+            specs: 'Angular_Code/Specs',
 
             // angular bundles
             '@angular/core': 'lib:@angular/core/bundles/core.umd.js',
@@ -37,6 +38,9 @@
                 defaultExtension: 'js'
             },
             rxjs: {
+                defaultExtension: 'js'
+            },
+            specs: {
                 defaultExtension: 'js'
             }
         }
